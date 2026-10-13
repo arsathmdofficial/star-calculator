@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono, [data-mono="true"] {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for history */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Moon breathing glow animation */
+@keyframes moon-breathe {
+  0%, 100% {
+    box-shadow: 0 0 35px rgba(226, 232, 240, 0.25), 0 0 70px rgba(186, 230, 253, 0.15), 0 0 120px rgba(56, 189, 248, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(226, 232, 240, 0.4), 0 0 95px rgba(186, 230, 253, 0.25), 0 0 160px rgba(56, 189, 248, 0.14);
+  }
+}
+
+.animate-moon-glow {
+  animation: moon-breathe 6s ease-in-out infinite;
+}
+
+/* Star twinkle subtle utility */
+@keyframes celestial-pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-celestial-pulse {
+  animation: celestial-pulse 4s ease-in-out infinite;
+}

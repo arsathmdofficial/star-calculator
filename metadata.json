@@ -1,0 +1,6 @@
+{
+  "name": "Lunar Calc - Moon & Night Sky Calculator",
+  "description": "A professional, fully functional calculator with a moon and night sky theme, typing intro animation, calculation history, and JSON backup/restore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
